@@ -34,13 +34,13 @@ public class Demo {
 
     }
     public static void main(String[] args) {
-         boolean NewCar = true;
+         String NewCar = "yes";
 
-         while (NewCar == true){
+         while (NewCar.equals("yes")){
              AskPeople();
              Scanner input = new Scanner(System.in);
              System.out.print("Do you want add car ");
-             NewCar = Boolean.parseBoolean(input.nextLine());
+             NewCar = input.nextLine();
          }
 
 
