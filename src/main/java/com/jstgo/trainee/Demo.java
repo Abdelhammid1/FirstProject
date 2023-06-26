@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Demo {
     public static void main(String[] args) {
         SpringApplication.run(Demo.class, args);
+        String name = "Shalabi"; //test write name to commit and push
     }
 }
