@@ -1,12 +1,10 @@
 package com.jstgo.trainee;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.w3c.dom.DOMImplementation;
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.w3c.dom.DOMImplementation;
 
 import java.util.Scanner;
-
-
 //@SpringBootApplication
 public class Demo {
 
@@ -31,7 +29,6 @@ public class Demo {
          System.out.println("Name of Car is : " + NameCar + ", Brand is " + BrandCar +
                  ", Color is " + ColorCar + " and price = " + PriceCar + "$");
 
-
     }
     public static void main(String[] args) {
          String NewCar = "yes";
@@ -42,10 +39,6 @@ public class Demo {
              System.out.print("Do you want add car ");
              NewCar = input.nextLine();
          }
-
-
-
-
 //        System.out.print("Enter Name Of Car ");  // Output user input
 //        NameCar = WriteWord.nextLine();
 //
@@ -63,7 +56,5 @@ public class Demo {
 //
 
     }
-
-
 
 }
