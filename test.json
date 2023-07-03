@@ -1,0 +1,14 @@
+{
+  "UserName": "Abdelhammid",
+  "SureName": "Shalabi",
+  "Age": 26,
+  "Adresses": {
+    "Egypt": [
+      "october",
+      "Quwesna",
+      645
+    ],
+    "UAE": "Dubai"
+  },
+  "R U Working": true
+}
