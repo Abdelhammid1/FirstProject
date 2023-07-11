@@ -1,35 +1,45 @@
 package com.jstgo.trainee;
-
-
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.jstgo.trainee.vo.GsonRoot;
+import org.json.simple.JSONObject;
+
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class Demo {
+    public static void main(String[] args) throws IOException {
+        String filePath = "C:/Projects/FirstProject/test.json";   // Specify the path to your JSON file
+
+        String jsonData = new String(Files.readAllBytes(Paths.get(filePath)));
+
+        //Parse JSON from string
+        JsonObject jsonObject = new Gson().fromJson(jsonData, JsonObject.class);
+        System.out.println("Original JSON: " + jsonObject);
 
 
-    public static void main(String[] args) {
-        // Specify the path to your JSON file
-        // Specify the path to your JSON file
-        String filePath = "./test.json";
+//        System.out.println("Original JSON: " + jsonObject);
+        jsonObject.addProperty("Age", "25");
+        jsonObject.addProperty("New Line","Added");
+        System.out.println("Modified JSON: " + jsonObject);
+        try(Writer writerObject = new FileWriter(filePath)){
 
-        try {
-            // Read the file contents as a string
-            String jsonContent = new String(Files.readAllBytes(Paths.get(filePath)));
-            var gson = new Gson().fromJson(jsonContent, GsonRoot.class);
+            Gson gsonObject = new Gson();
 
-            // Print the JSON content
-            System.out.println("JSON Content:");
-            System.out.println(gson.getSureName());
+            /*
+             * Use the toJson method and specify
+             * the writer and the object we want to write
+             */
+            gsonObject.toJson(jsonObject, writerObject);
 
-            // Parse the JSON content if needed
-            // ...
-        } catch (IOException e) {
+        }catch(Exception e) {
             e.printStackTrace();
         }
+        System.out.println("Original JSON: " + jsonObject);
+
+
     }
-
-
 }

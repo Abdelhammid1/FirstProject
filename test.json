@@ -1,14 +1,1 @@
-{
-  "UserName": "Abdelhammid",
-  "SureName": "Shalabi",
-  "Age": 26,
-  "Adresses": {
-    "Egypt": [
-      "october",
-      "Quwesna",
-      645
-    ],
-    "UAE": "Dubai"
-  },
-  "rUWorking": true
-}
+{"UserName":"Abdelhammid","SureName":"Shalabi","Age":"25","Adresses":{"Egypt":["october","Quwesna",645],"UAE":"Dubai"},"rUWorking":true,"AddNewVar":"Done","New Line":"Added"}
