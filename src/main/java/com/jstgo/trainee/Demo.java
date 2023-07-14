@@ -13,7 +13,6 @@ import java.nio.file.Paths;
 public class Demo {
     public static void main(String[] args) throws IOException {
         String filePath = "C:/Projects/FirstProject/test.json";   // Specify the path to your JSON file
-
         String jsonData = new String(Files.readAllBytes(Paths.get(filePath)));
 
         //Parse JSON from string
