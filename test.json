@@ -1,14 +1,1 @@
-{
-  "UserName": "Abdelhammid",
-  "SureName": "Shalabi",
-  "Age": 26,
-  "Adresses": {
-    "Egypt": [
-      "october",
-      "Quwesna",
-      645
-    ],
-    "UAE": "Dubai"
-  },
-  "rUWorking": true
-}
+{"UserName":"Abdelhammid","SureName":"Shalabi","Age":80,"Adresses":{"Egypt":["october","Quwesna",645.0,"Ahli"]},"R U Working":false}

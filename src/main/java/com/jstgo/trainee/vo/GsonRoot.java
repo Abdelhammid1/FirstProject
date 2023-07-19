@@ -1,6 +1,5 @@
 package com.jstgo.trainee.vo;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
 public class GsonRoot {
